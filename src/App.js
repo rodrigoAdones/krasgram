@@ -31,7 +31,7 @@ class App extends Component {
 
   handleLogout () {
     firebase.auth().signOut()
-    .then(result => console.log(`${result.user.email} se ha desconectado`))
+    .then(result => console.log(`Se ha desconectado`))
     .catch(error => console.log(`Error ${error.code}: ${error.message}`))
   }
 
